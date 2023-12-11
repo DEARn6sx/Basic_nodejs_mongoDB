@@ -10,5 +10,10 @@
     <p><%= data%></p>
     <p><%= age%></p>
     <p><b>ที่อยู่ =</b><%- address%></p>
+    <% if (age > 15) {%>
+        <h1>pass</h1>
+    <% } else {%>
+        <h1>not pass</h1>
+    <% }%>
 </body>
 </html>

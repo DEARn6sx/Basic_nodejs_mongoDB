@@ -4,8 +4,8 @@ const router = express.Router()
 
 router.get('/',(req,res)=>{
     const name = "DEAR"
-    const age = 26
-    const address = "<h1>Roi et</h1>"
+    const age = 10
+    const address = "Roi et"
     res.render('index.ejs',{data: name,age: age, address:address})
 })
 
