@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><%= products %></p>
+    <p><%= products[0] %></p>
+    <ol>
+        <% for(i=0;i<products.length;i++) {%>
+            <h1><li><%= products[i]%> </li> </h1>    
+        <% } %>
+    </ol>
+
+    <ol>
+        <% for(index in products) {%>
+            <h1><li><%= products[index]%> </li> </h1>    
+        <% } %>
+    </ol>
+   
+</body>
+</html>

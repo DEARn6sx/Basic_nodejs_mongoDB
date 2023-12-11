@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const router = require('./routs/my_router')
+const router = require('./routs/my_router2_array')
 const app = express()
 
 //ตั้งค่า engine สำหรับรันแอป
