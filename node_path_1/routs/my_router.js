@@ -21,7 +21,9 @@ router.get('/product/:id',(req,res)=>{
     else if (myParam_id ==='3') {
         res.sendFile(`${pathPage}/product3.html`)
     }
-    else res.send('Fail not found Shit man!!')
+    else {
+        res.redirect('/')
+    }
 })
 
 module.exports = router
