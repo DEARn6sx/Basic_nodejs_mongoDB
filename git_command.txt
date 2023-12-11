@@ -1,0 +1,62 @@
+//แสดงรายละเอียดการตั้งค่า
+git config --list
+
+git config --global user.email "nantawats.study@gmail.com"
+
+git config --global user.name "DEARn6sx"
+
+//สร้าง Local git respository
+git init	//เริ่มเอา  git มาตรวจสอบ Project
+
+//สร้างไฟล์ app.js 
+touch app.js 
+
+//การเพิ่มไฟล์เข้าไปใน Staging Area (check-in)
+git add <file_name>  //ระบุไฟล์ เช่น git add index.html
+
+//การเอาไฟล์ออกจาก Staging Area
+git reset <file_name>
+
+git add *.html	//เพิ่มหลายๆไฟล์พร้อมระบุนามสกุล
+
+git add .	//เพิ่มไฟล์ที่อยู่ภายใต้ directory
+
+//ลบไฟล์ โฟลเดอร์ ออกจาก git repository
+git rm -r --cached . //ลบทั้งหมด
+git rm --cached<file_name> //ระบุไฟล์
+
+//ตรวจสอบสถานะ การเปลี่ยนแปลง responsitory
+git status
+
+//เก็บประวัติการแก้ไขถาวร(commit)
+git commit -m "Log Message"
+
+//ดูประวัติการ commit
+git log
+git log --oneline //แสดงแต่ละ log เหลือ บรรทัดเดียว
+git log --graph //แสดงเป็นเส้น branch ดูง่ายกว่า
+
+//เปรียบเทียบversion (diff)
+git diff <commit_id>  	//แบบระบุ id
+git diff <commit_id><commit_id> //เปรียบเทียบ 2 commit
+
+
+
+git show HEAD //แสดงversion ล่าสุด
+
+//git reset
+git reset --hard <commit_id> //ลบไฟล์หลัง commitid ที่เลือกทิ้งหมด
+git reset --soft <commit_id> //ลบไฟล์ coommit กลับไป staging area
+git reset --mixed <commit_id>//ลบไฟล์ coommit กลับไป working directory
+
+
+//Git Branching ****ใช้เป็นหลัก******
+git branch //แสดงชื่อ branch
+git checkout <ชื่อbranch> // สลับ branch
+git checkout -b <ชื่อbranch> //การสลับและสร้าง branch
+git checkout master // ไป branch หลัก
+git merge <ชื่อbranch> รวม branch
+git branch  -D <ชื่อbranch> // ลบ branch
+
+
+git remote add origin https://github.com/DEARn6sx/DEARgitProject.git
