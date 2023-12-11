@@ -1,1 +1,2 @@
 npm init //ประกาศเริ่มสร้าง app nodejs จะได้ package.json
+npm i nodemon // module ที่คอยติดตามการเปลี่ยนแปลง .js ในแอป ไม่ต้องรันโค้ดใหม่ตลอด

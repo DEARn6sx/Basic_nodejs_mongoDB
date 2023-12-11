@@ -1,7 +1,8 @@
 const http = require('http')
 
 const server = http.createServer(function(req, res) {
-    res.write('55555555555hello wolrd555555555555')
+    const text = '66666666666666666'
+    res.write(text)
     res.end()
 })
 
