@@ -1,8 +1,9 @@
 npm init //ประกาศเริ่มสร้าง app nodejs จะได้ package.json
 npm i nodemon // module ที่คอยติดตามการเปลี่ยนแปลง .js ในแอป ไม่ต้องรันโค้ดใหม่ตลอด
 npm i express //framework ช้วยให้ใช้งาน web serv ได้ง่ายขึ้น(ง่ายกว่าnodejs) จัดการพกว req,res,middleware
-
+ืnpm i ejs //template engine โครงสร้างคล้าย html ที่เขียน js ลงใน html ได้ ใช้สนามสกุล .ejs
 
 const http = require('http') //ใช้รัน server
 const fs = require('fs')    //ใช้เขียนอ่าน file
 const url = require('url')  //ใช้ดึงข้อมูล url
+
