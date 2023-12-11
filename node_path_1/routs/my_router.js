@@ -10,10 +10,18 @@ router.get('/',(req,res)=>{
     res.type(`text/html`) //รูปแบบการ response
     res.sendFile(`${pathPage}/index.html`)
 })
-router.get('/product',(req,res)=>{
-    res.status(200)
-    res.type(`text/html`) //รูปแบบการ response
-    res.sendFile(`${pathPage}/product1.html`)
+router.get('/product/:id',(req,res)=>{
+    const myParam_id = req.params.id
+    if (myParam_id ==='1') {
+        res.sendFile(`${pathPage}/product1.html`)
+    }
+    else if (myParam_id ==='2') {
+        res.sendFile(`${pathPage}/product2.html`)
+    }
+    else if (myParam_id ==='3') {
+        res.sendFile(`${pathPage}/product3.html`)
+    }
+    else res.send('Fail not found Shit man!!')
 })
 
 module.exports = router
