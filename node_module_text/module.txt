@@ -1,2 +1,8 @@
 npm init //ประกาศเริ่มสร้าง app nodejs จะได้ package.json
 npm i nodemon // module ที่คอยติดตามการเปลี่ยนแปลง .js ในแอป ไม่ต้องรันโค้ดใหม่ตลอด
+
+
+
+const http = require('http') //ใช้รัน server
+const fs = require('fs')    //ใช้เขียนอ่าน file
+const url = require('url')  //ใช้ดึงข้อมูล url
