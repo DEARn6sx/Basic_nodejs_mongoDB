@@ -1,9 +1,16 @@
 const http = require('http')
 
 const server = http.createServer(function(req, res) {
-    const text = '66666666666666666'
-    res.write(text)
-    res.end()
+    const pathname = req.url
+    console.log(`url = ${pathname}`);
+    if (pathname === '/' || pathname === 'home') {
+        res.end('Heeloo homepage')
+    }else if (pathname === '/product') {
+        res.end('hello product')
+    }else{ 
+        res.writeHead(404)
+        res.end('not found!!')
+    }
 })
 
 server.listen(4000,()=>{
