@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p><%= products %></p>
+    <hr>
+    <!-- ให้เข้าถึงสมาชิกใน array products ในรูปแบบ obj ไปดึงมาทีละตัว -->
+    <% Object.values(products).forEach(function(item){%>
+        <img src="<%= item.image %>" style="width: 100px;"alt="">
+        <p>ชื่อสินค้า = <%= item.name%></p>
+        <p>ชื่อสินค้า = <%= item.price%></p>
+        <hr>
+    <% }) %>
+</body>
+</html>
+
+
