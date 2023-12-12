@@ -12,10 +12,10 @@ router.get('/',(req,res)=>{
 })
 
 router.get('/addform',(req,res)=>{
-    res.render('form')
+    res.render('public/form')
 })
 router.get('/manage',(req,res)=>{
-    res.render('manage')
+    res.render('public/manage')
 })
 
 module.exports = router
