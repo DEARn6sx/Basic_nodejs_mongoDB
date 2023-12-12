@@ -2,10 +2,10 @@
   "name": "nodejs",
   "version": "1.0.0",
   "description": "Node for starter",
-  "main": "node_path_2/start_server2.js",
+  "main": "node_path_3_DB/start_server_db_1.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./bin/www/nodejs/node_path_2"
+    "start": "nodemon ./bin/www/nodejs/node_path_3_DB"
   },
   "author": "DEAR dev",
   "license": "ISC",
