@@ -13,16 +13,16 @@ router.get('/',(req,res)=>{
 })
 
 router.get('/addform',(req,res)=>{
-    res.render('public/form')
+    res.render('public_page/form')
 })
 router.get('/manage',(req,res)=>{
-    res.render('public/manage')
+    res.render('public_page/manage')
 })
 
 router.post('/insert',(req,res) => {
     console.log(req.body);
     console.log(req.body.name)
-    res.render('public/form')
+    res.render('public_page/form')
     
 })
 
