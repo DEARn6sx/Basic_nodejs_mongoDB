@@ -23,3 +23,9 @@ let Product = mongoose.model('products',productSchema)
 
 //ส่งออก Model
 module.exports = Product
+
+//ออกแบบ fn บันทึกข้อมูล
+module.exports.saveProduct = function(model, data) {
+    model.save(data) //บันทึกข้อมูลลงDB ผ่าน model
+}
+
