@@ -16,6 +16,6 @@ app.use(session({secret:"my_session",resave:false,saveUninitialized:false}))
 
 app.use(router)
 app.use(express.static(path.join(`${__dirname}/public`))) //ใช้งานfolder ks_templates 
-app.listen(8000,()=>{
-    console.log(`start server port: 8000`);
+app.listen(7000,()=>{
+    console.log(`start server port: 7000`);
 })
