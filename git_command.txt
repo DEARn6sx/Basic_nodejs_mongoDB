@@ -60,3 +60,5 @@ git branch  -D <ชื่อbranch> // ลบ branch
 
 
 git remote add origin https://github.com/DEARn6sx/DEARgitProject.git
+git branch -M main
+git push -u origin main
